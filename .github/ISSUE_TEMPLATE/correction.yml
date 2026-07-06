@@ -1,0 +1,30 @@
+name: 誤り・改善の報告
+description: 内容の誤り、誤字脱字、わかりにくい箇所の報告
+labels: ["correction"]
+body:
+  - type: dropdown
+    id: book
+    attributes:
+      label: 対象の巻
+      options:
+        - 第1巻（小学生）
+        - 第2巻（中学生）
+        - 第3巻（高校生）
+        - 第4巻（社会人）
+        - 第5巻（高齢者）
+    validations:
+      required: true
+  - type: textarea
+    id: location
+    attributes:
+      label: 該当箇所
+      placeholder: "章・節のタイトルや、該当するテキストを引用してください"
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: 内容
+      placeholder: "何が問題で、どう修正すべきか"
+    validations:
+      required: true

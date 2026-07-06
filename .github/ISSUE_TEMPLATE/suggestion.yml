@@ -1,0 +1,16 @@
+name: 提案・アイデア
+description: 新しい章の提案、構成の改善、他教科への展開など
+labels: ["suggestion"]
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: 提案内容
+      placeholder: "どんな改善・追加があると良いか"
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: 背景・理由
+      placeholder: "なぜその提案が有用か"
